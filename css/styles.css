@@ -76,6 +76,16 @@
   }
 }
 
+.project-image-box {
+  display: flex;
+  gap: 30px;
+}
+
+.project-image {
+  height: 200px;
+  width: auto;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
