@@ -77,13 +77,36 @@
 }
 
 .project-image-box {
+  margin-top: 20px;
   display: flex;
-  gap: 30px;
+  justify-content: center;
 }
 
 .project-image {
-  height: 200px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #c4c4c4;
+  margin-top: 30px;
+  height: 300px;
   width: auto;
+  transition: all 400ms ease-out;
+}
+
+@media (max-width: 599px) {
+  .project-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 10px #c4c4c4;
+}
+
+.project-link {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 body {
